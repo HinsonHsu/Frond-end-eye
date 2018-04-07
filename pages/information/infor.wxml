@@ -1,0 +1,4 @@
+<!--pages/information/infor.wxml-->
+<view class='information'>
+  <text>{{key}}</text>
+</view>
