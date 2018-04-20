@@ -1,0 +1,6 @@
+<!--pages/test/test.wxml-->
+ <span style="font-family:'Comic Sans MS';font-size:18px;">
+  <block wx:for="{{history_infor}}" wx:key="{{item.viewid}}">   
+    <view class="item_infor"> {{index}}:{{item.text}} </view>  
+  </block>
+</span>   

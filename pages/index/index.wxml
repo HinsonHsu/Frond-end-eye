@@ -11,10 +11,4 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>
-  <view class="camera">
-    <button bindtap="camera">请拍照</button>
-  </view> 
-  <!-- <view class="request">
-    <button bindtap='request'>请求</button>
-  </view> -->
 </view>

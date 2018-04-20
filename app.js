@@ -10,6 +10,26 @@ App({
     wx.login({
       success: res => {
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
+        if (res.code) {
+          console.log('获取用户登录凭证：' + res.code)
+          wx.request({
+            url: getApp().globalData.server + '/login',
+            method: "POST",
+            header:{
+              "Content-Type":"application/x-www-form-urlencoded"
+            },
+            data: {
+              code: res.code, 
+              "openid": "186343254515",
+              "username": "aaaafr"
+            },
+            success: function (res) {
+              console.log(res.data)
+            }
+          })
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
       }
     })
     // 获取用户信息
@@ -33,7 +53,30 @@ App({
       }
     })
   },
+  getUserInfo: function (cb) {
+    var that = this;
+    if (this.globalData.userInfo) {
+      typeof cb == "function" && cb(this.globalData.userInfo)
+    } else {
+      //调用登录接口  
+      wx.login({
+        success: function () {
+          wx.getUserInfo({
+            success: function (res) {
+              that.globalData.userInfo = res.userInfo;
+              typeof cb == "function" && cb(that.globalData.userInfo)
+            }
+          })
+        }
+      });
+    }
+  },  
   globalData: {
-    userInfo: null
+    userInfo: null,
+    server: 'http://www.h1nson.club',
+    cameraFlag:false , //标记相机未被打开
+    albumFlag:false,  //标记图片库未被打开
+    inforNum:1,  //记录信息的次数
+    inforFlag:false
   }
 })

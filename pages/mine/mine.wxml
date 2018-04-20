@@ -1,0 +1,15 @@
+<!--pages/mine/mine.wxml-->
+ 
+<!-- 获取头像和用户名 -->
+<view class="userinfo">  
+  <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>  
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>  
+  </view> 
+<!-- 设置列表 -->
+<block wx:for="{{list}}" wx:key="{{item.id}}">
+  <view class="item-style" bindtap='gotableinfor' data-id="{{item.id}}">
+    <view>{{item.name}}</view>
+    <image src="{{item.icon}}" style="width:30px;height:20px;" class="icon"></image>        
+  </view>
+</block>
+  

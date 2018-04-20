@@ -1,4 +1,10 @@
 <!--pages/information/infor.wxml-->
+<!-- 图片 -->
+<view class="image">
+  <image src="{{path}}" class="photo" bindload="imageLoad"  style="width:{{imgwidth}}rpx; height:{{imgheight }}rpx;"></image>
+</view>
+<!-- 图片的信息 -->
 <view class='information'>
-  <text>{{key}}</text>
+  <view><text class="place">{{place}}</text></view>
+  <view><text>{{des}}</text></view>
 </view>
