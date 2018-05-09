@@ -30,7 +30,6 @@ Page({
       getApp().globalData.cameraFlag = true //标记相机已被打开
       this.camera()
     }
-    // this.camera()
   },
 
   /**
@@ -40,6 +39,9 @@ Page({
     //进行一次拍照后返回首页
     wx.switchTab({
       url: '../index/index',
+      success: function(e){
+        getApp().globalData.cameraFlag = false //相机已关闭
+      }
     })
   },
 
@@ -47,7 +49,7 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
+    
   },
 
   /**
@@ -80,6 +82,7 @@ Page({
       success: function (res) {
         var tempFilePaths = res.tempFilePaths // 存储照片的存放位置
         // console.log(tempFilePaths[0])
+        console.log("photo success")
         wx.uploadFile({
           url: getApp().globalData.server + '/upload', //服务器地址
           filePath: tempFilePaths[0],
@@ -88,6 +91,7 @@ Page({
             'user': 'test'
           },
           success: function (res) {
+            console.log("upload success")
             var data = res.data
             // data = {
             //   name: "fuzinfs",
@@ -104,6 +108,7 @@ Page({
             })
           },
           fail: function (res) {
+            console.log("upload fail")
             wx.showToast({
               title: '失败',
               icon: 'fail',

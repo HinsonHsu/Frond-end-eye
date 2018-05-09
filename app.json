@@ -8,7 +8,11 @@
     "pages/mine/mine",
     "pages/test/test",
     "pages/history_infor/history_infor",
-    "pages/setting/setting"
+    "pages/setting/setting",
+    "pages/strategy/strategy",
+    "pages/stars/stars",
+    "pages/des_detail/des_detail",
+    "pages/route_all/route_all"
   ],
   "window": {
     "backgroundTextStyle": "light",

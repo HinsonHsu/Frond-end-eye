@@ -1,0 +1,150 @@
+/* pages/strategy/strategy.wxss */
+@import "../stars/stars.wxss";
+page{
+  background-color:whitesmoke;
+  height: 100%; 
+}
+
+.title{
+  color: orange
+}
+
+.explain {  
+  background-color:white; 
+  border: solid 1px black; 
+  border-radius: 5%;
+  margin-left: 2px;
+  margin-right: 2px;  
+  display: flex;
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+
+.picture_1{
+  width: 60%;
+}
+
+.p1 {
+  border-radius: 10%; 
+  margin-top: 9px;
+  margin-left: 5px;
+}
+
+.text_1{
+  width:40%;
+}
+
+.des {
+  font-size: 10px;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:4;
+}
+
+.des_detail {
+  font-size: 10px;
+  color: #38B0De;
+}
+
+.time {
+  font-size: 13px;
+}
+
+.day {
+  font-size: 13px;
+}
+
+.visa {
+  font-size: 13px;
+}
+
+.route {  
+  background-color:white; 
+  border: solid 1px black; 
+  border-radius: 5%;
+  margin-left: 2px;
+  margin-right: 2px; 
+  margin-top: 4px; 
+  display: flex;
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+
+.picture_2 {
+  width: 60%;
+}
+
+.p2 {
+  border-radius: 10%; 
+  margin-top: 9px;
+  margin-left: 5px;
+}
+
+.text_2 {
+  width: 40%;
+  font-size: 13px;
+}
+
+.route_detail{
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:11; 
+}
+
+.route_all{
+  color: #38B0De;
+}
+
+.recommend {  
+  background-color:white; 
+  border: solid 1px black; 
+  border-radius: 5%;
+  margin-left: 2px;
+  margin-right: 2px; 
+  margin-top: 4px; 
+  display: flex;
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+
+.part3 {
+  font-size: 15px
+}
+
+.p3 {
+  margin-left: 7px;
+}
+.p4 {
+  margin-left: 7px;
+}
+.p5 {
+  margin-left: 7px;
+}
+.r1_n {
+  font-size: 15px;
+  margin-left: 40px;
+}
+.r2_n {
+  font-size: 15px;
+  margin-left: 85px;
+}
+.r3_n {
+  font-size: 15px;
+  margin-left: 80px;
+}
+.r_s{
+  display: flex;  
+  flex-direction: row;
+}
+.r1_s{
+  margin-left: 20px
+}
+.r2_s{
+  margin-left: 40px
+}
+.r3_s{
+  margin-left: 45px
+}

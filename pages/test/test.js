@@ -6,32 +6,37 @@ var infor_f = getApp().globalData.inforFlag
 
 Page({
   data: {
-      history_infor: [{
-        text: 1111
-      }, {
-        text: '2222'
-      }, {
-        text: '2222'
-      }, {
-        text: '2222'
-      }, {
-        text: '2222'
-      }, {
-        text: '2222'
-      }]
+    starScore:5
+      // history_infor: [{
+      //   text: 1111
+      // }, {
+      //   text: '2222'
+      // }, {
+      //   text: '2222'
+      // }, {
+      //   text: '2222'
+      // }, {
+      //   text: '2222'
+      // }, {
+      //   text: '2222'
+      // }]
   },
 
   onLoad: function(options){
-    wx.getStorage({
-      key: 'key',
-      success: function (res) {
-        //console.log(res)
-        //console.log(res.data)
 
-        //json 解析
-        var obj = JSON.parse(res.data)
-        console.log(obj.tags[0].value)
-      }
-    })
+    // var obj = JSON.parse(options.key)
+    
+
+    // wx.getStorage({
+    //   key: 'key',
+    //   success: function (res) {
+    //     //console.log(res)
+    //     //console.log(res.data)
+
+    //     //json 解析
+    //     var obj = JSON.parse(res.data)
+    //     console.log(obj.tags[0].value)
+    //   }
+    // })
   }
 })

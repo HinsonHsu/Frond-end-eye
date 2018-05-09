@@ -20,8 +20,6 @@ Page({
     })
     //console.log(options.key)
     //console.log("路径" + options.path)
-    getApp().globalData.cameraFlag = false //相机已关闭
-    getApp().globalData.albumFlag = false //图片库已关闭
     getApp().globalData.inforFlag = true  //信息已接收
 
     //json解析

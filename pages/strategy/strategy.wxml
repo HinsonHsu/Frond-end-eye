@@ -1,0 +1,60 @@
+<!--pages/strategy/strategy.wxml-->
+<import src='../stars/stars.wxml'/>
+<text class='title'>旅游攻略：</text>
+<view class='explain'>
+  <view class='picture_1'>
+    <image src='/images/test1.jpeg' class='p1' bindload="imageLoad" style="width:{{imgwidth}}rpx; height:{{imgheight }}rpx;"></image>
+  </view>
+  <view class='text_1'>
+    <view><text class="place">关于{{place}}</text></view>
+    <view><template is='starsTpl' data="{{starScore:scores}}"></template></view>
+    <view><text class='des'>{{des}}</text></view>
+    <view><text class='des_detail' bindtap='detail_des'>[详细介绍]</text></view>
+    <view>
+      <image src='/images/time.png' style="width:15px;height:15px;"></image>
+      <text class='time'>  最佳季节:{{time}}</text>
+    </view>
+    <view>
+      <image src='/images/day.png' style='width:15px;height:15px;'></image>
+      <text class='day'>  建议游玩:{{day}}天</text>
+    </view>
+    <view>
+      <image src='/images/visa.png' style='width:15px;height:15px;'></image>
+      <text class='visa'>   签证难度:{{visa}}</text>
+    </view>
+  </view> 
+</view>
+<view class='route'>
+  <view class='picture_2'>
+    <image src='/images/test2.jpg' class='p2' bindload="imageLoad" style="width:{{imgwidth}}rpx; height:{{imgheight }}rpx;"></image>
+  </view>
+  <view class='text_2'>
+    <view class='route_detail'>
+      <text>行程路线：\n</text>
+      <text>第一天：{{day1}}\n</text>
+      <text>第二天：{{day2}}\n</text>
+      <text>第三天：{{day3}}\n</text>
+    </view>
+    <view><text class='route_all' bindtap='route_all'>[查看全部]</text></view>
+  </view>
+</view>
+<view class='recommend'>
+  <view>
+    <text class='part3'>不可错过：\n</text>
+    <view class='recommend_p'>
+      <image src='/images/moerben.jpeg' class='p3' style="width:230rpx; height:100rpx;"></image>
+      <image src='/images/xini.jpeg' class='p4' style="width:230rpx; height:100rpx;"></image>
+      <image src='/images/bulisiban.jpeg' class='p5' style="width:230rpx; height:100rpx;"></image>
+    </view> 
+    <view>
+      <text class='r1_n'>{{r1_n}}</text>
+      <text class='r2_n'>{{r2_n}}</text>
+      <text class='r3_n'>{{r3_n}}</text>
+      <view class='r_s'>
+        <view class='r1_s'><template is='starsTpl' data="{{starScore:r1_s}}"></template></view>
+        <view class='r2_s'><template is='starsTpl' data="{{starScore:r2_s}}"></template></view>
+        <view class='r3_s'><template is='starsTpl' data="{{starScore:r3_s}}"></template></view>
+      </view>
+    </view>
+  </view>
+</view>

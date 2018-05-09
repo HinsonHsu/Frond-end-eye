@@ -39,6 +39,9 @@ Page({
     //打开一次相片库后返回首页
     wx.switchTab({
       url: '../index/index',
+      success: function(e){
+        getApp().globalData.albumFlag = false //图片库已关闭
+      }
     })
   },
 

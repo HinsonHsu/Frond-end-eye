@@ -1,5 +1,6 @@
 /* pages/test/test.wxss */
-.item_infor {
+
+/* .item_infor {
   position: relative;  
   display: flex;  
   padding: 15px;  
@@ -7,4 +8,21 @@
   -ms-flex-align: center;  
   align-items: center;  
   border-bottom: 1px solid #dadada;   
+} */
+
+
+.col {
+  display: flex;
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
 }
+
+
+
+.col-3 {
+  width: 50%;
+}
+
+.col-9 {
+  width: 50%;
+}
+
