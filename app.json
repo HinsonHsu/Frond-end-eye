@@ -12,7 +12,8 @@
     "pages/strategy/strategy",
     "pages/stars/stars",
     "pages/des_detail/des_detail",
-    "pages/route_all/route_all"
+    "pages/route_all/route_all",
+    "pages/analogy/analogy"
   ],
   "window": {
     "backgroundTextStyle": "light",

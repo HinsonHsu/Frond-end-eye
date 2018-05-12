@@ -1,0 +1,215 @@
+/* pages/analogy/analogy.wxss */
+@import "../stars/stars.wxss";
+page{
+  background-color:whitesmoke;
+  height: 100%; 
+}
+
+.title {
+  color: orange
+}
+
+.module1 {  
+  background-color:white; 
+  /* border: solid 1px black;  */
+  border-radius: 5%;
+  margin-left: 2px;
+  margin-right: 2px;  
+}
+
+.p1_title {
+  font-size: 15px
+}
+
+.note1 {
+  font-size: 15px;
+  color: orange; 
+  margin-left: 100px;
+} 
+
+.m1 {
+  margin-left: 5px;
+  margin-top: 2px;
+  display: flex; 
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;  
+}
+
+.m1_p{
+  width: 60%
+}
+.p1_p {
+  border-radius: 10%; 
+}
+
+
+
+.text_1{
+  width: 50%;
+  margin-left: 10px;
+}
+
+.p1_d {
+  font-size: 10px;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:7;
+}
+
+.p1_time {
+  font-size: 10px
+}
+
+.p1_s {
+  margin-top: 4px;
+  font-size: 10px
+}
+
+.s1_line {
+  display: flex;  
+  flex-direction: row;
+}
+
+.p1_detail {
+  color: #38B0De;
+  font-size: 10px;
+}
+
+
+
+.module2 {  
+  background-color:white; 
+  /* border: solid 1px black;  */
+  border-radius: 5%;
+  margin-left: 2px;
+  margin-right: 2px;  
+  margin-top: 5px;
+}
+
+.p2_title {
+  font-size: 15px
+}
+
+.note2 {
+  font-size: 15px;
+  color: orange; 
+  margin-left: 110px;
+} 
+
+.m2 {
+  margin-left: 5px;
+  margin-top: 2px;
+  display: flex; 
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;  
+}
+
+.m2_p{
+  width: 60%
+}
+.p2_p {
+  border-radius: 10%; 
+}
+
+.text_2{
+  width: 50%;
+  margin-left: 10px;
+}
+
+.p2_d {
+  font-size: 10px;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:7;
+}
+
+.p2_time {
+  font-size: 10px
+}
+
+.p2_s {
+  margin-top: 4px;
+  font-size: 10px
+}
+
+.s2_line {
+  display: flex;  
+  flex-direction: row;
+}
+
+.p2_detail {
+  color: #38B0De;
+  font-size: 10px;
+}
+
+
+.module3 {  
+  background-color:white; 
+  /* border: solid 1px black;  */
+  border-radius: 5%;
+  margin-left: 2px;
+  margin-right: 2px;  
+  margin-top: 5px;
+}
+
+.p3_title {
+  font-size: 15px
+}
+
+.note3 {
+  font-size: 15px;
+  color: orange; 
+  margin-left: 80px;
+} 
+
+.m3 {
+  margin-left: 5px;
+  margin-top: 2px;
+  display: flex; 
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;  
+}
+
+.m3_p{
+  width: 60%
+}
+.p3_p {
+  border-radius: 10%; 
+}
+
+.text_3{
+  width: 50%;
+  margin-left: 10px;
+}
+
+.p3_d {
+  font-size: 10px;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:7;
+}
+
+.p3_time {
+  font-size: 10px
+}
+
+.p3_s {
+  margin-top: 4px;
+  font-size: 10px
+}
+
+.s3_line {
+  display: flex;  
+  flex-direction: row;
+}
+
+.p3_detail {
+  color: #38B0De;
+  font-size: 10px;
+}

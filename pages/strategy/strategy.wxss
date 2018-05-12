@@ -11,7 +11,7 @@ page{
 
 .explain {  
   background-color:white; 
-  border: solid 1px black; 
+  /* border: solid 1px black;  */
   border-radius: 5%;
   margin-left: 2px;
   margin-right: 2px;  
@@ -62,7 +62,7 @@ page{
 
 .route {  
   background-color:white; 
-  border: solid 1px black; 
+  /* border: solid 1px black;  */
   border-radius: 5%;
   margin-left: 2px;
   margin-right: 2px; 
@@ -101,7 +101,7 @@ page{
 
 .recommend {  
   background-color:white; 
-  border: solid 1px black; 
+  /* border: solid 1px black;  */
   border-radius: 5%;
   margin-left: 2px;
   margin-right: 2px; 

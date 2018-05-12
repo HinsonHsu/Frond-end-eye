@@ -12,4 +12,5 @@
     <text class="user-motto">{{motto}}</text>
   </view>
   <button bindtap='a'>相关攻略</button>
+  <button bindtap='b'>相关景点</button>
 </view>

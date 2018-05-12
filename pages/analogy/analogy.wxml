@@ -1,0 +1,66 @@
+<!--pages/analogy/analogy.wxml-->
+<import src='../stars/stars.wxml'/>
+<text class='title'>相关景点推荐：</text>
+<view class='module1'>
+  <view>
+    <text class='p1_title'>{{p1_title}}</text>
+    <text class='note1'>游记\n</text>
+  </view>
+  <view class='m1'>
+    <view class='m1_p'>
+      <image src='/images/analogy_1.jpg' class='p1_p' style='width:200px; height:150px;'></image> 
+    </view>
+    <view class='text_1'>
+      <view class='s1_line'>
+        <text class='p1_s'>评分:</text>
+        <template is='starsTpl' data="{{starScore:p1_s}}"></template>
+      </view>
+      <text class='p1_time'>最佳时间：{{p1_time}}</text>
+      <text class='p1_d'>简介：{{p1_d}}</text>
+      <text class='p1_detail'>[详细介绍]</text>
+    </view>  
+  </view> 
+</view>
+
+<view class='module2'>
+  <view>
+    <text class='p2_title'>{{p2_title}}</text>
+    <text class='note2'>游记\n</text>
+  </view>
+  <view class='m2'>
+    <view class='m2_p'>
+      <image src='/images/analogy_2.jpg' class='p2_p' style='width:200px; height:150px;'></image> 
+    </view>
+    <view class='text_2'>
+      <view class='s2_line'>
+        <text class='p2_s'>评分:</text>
+        <template is='starsTpl' data="{{starScore:p2_s}}"></template>
+      </view>
+      <text class='p2_time'>最佳时间：{{p2_time}}</text>
+      <text class='p2_d'>简介：{{p2_d}}</text>
+      <text class='p2_detail'>[详细介绍]</text>
+    </view>  
+  </view> 
+</view>
+
+<view class='module3'>
+  <view>
+    <text class='p3_title'>{{p3_title}}</text>
+    <text class='note3'>游记\n</text>
+  </view>
+  <view class='m3'>
+    <view class='m3_p'>
+      <image src='/images/analogy_3.jpg' class='p3_p' style='width:200px; height:150px;'></image> 
+    </view>
+    <view class='text_3'>
+      <view class='s3_line'>
+        <text class='p3_s'>评分:</text>
+        <template is='starsTpl' data="{{starScore:p3_s}}"></template>
+      </view>
+      <text class='p3_time'>最佳时间：{{p3_time}}</text>
+      <text class='p3_d'>简介：{{p3_d}}</text>
+      <text class='p3_detail'>[详细介绍]</text>
+    </view>  
+  </view> 
+</view>
+
