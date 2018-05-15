@@ -14,29 +14,31 @@ Page({
   onLoad: function (options) {
     // console.log(options)
     var obj = JSON.parse(options.key)
-    var route = JSON.parse(options.route)
-    var recommend = JSON.parse(options.recommend)
-    // console.log(obj)
+    console.log(obj)
     //相关介绍
-    var place = obj.name
-    var des = obj.des
-    var scores = obj.scores
-    var time = obj.time
-    var day = obj.day
-    var visa = obj.visa
+    var place = obj.place.name
+    var des = obj.place.des
+    var scores = obj.place.scores
+    var time = obj.place.time
+    var day = obj.place.day
+    var visa = obj.place.visa
+    var image_url = obj.place.image_url
     //路线介绍
-    var day1 = route.day1
-    var day2 = route.day2
-    var day3 = route.day3
+    var day_url = obj.routes[0].image_url
+    var day1 = obj.routes[0].route
+    var day2 = obj.routes[1].route
+    var day3 = obj.routes[2].route
     //推荐
-    console.log(recommend)
-    var recommend1_name = recommend.recommend1.name
-    var recommend1_scores = recommend.recommend1.scores
-    var recommend2_name = recommend.recommend2.name
-    var recommend2_scores = recommend.recommend2.scores
-    var recommend3_name = recommend.recommend3.name
-    var recommend3_scores = recommend.recommend3.scores
-   
+    var recommend1_name = obj.recommend[0].name
+    var recommend1_scores = obj.recommend[0].score
+    var recommend1_url = obj.recommend[0].image_url
+    var recommend2_name = obj.recommend[1].name
+    var recommend2_scores = obj.recommend[1].score
+    var recommend2_url = obj.recommend[1].image_url
+    var recommend3_name = obj.recommend[2].name
+    var recommend3_scores = obj.recommend[2].score
+    var recommend3_url = obj.recommend[2].image_url
+
     this.setData({
       place: place,
       des: des,
@@ -44,17 +46,22 @@ Page({
       time: time,
       day: day,
       visa: visa,
+      image_url: image_url,
 
-      day1:day1,
-      day2:day2,
-      day3:day3,
+      day1: day1,
+      day2: day2,
+      day3: day3,
+      day_url: day_url,
 
-      r1_n : recommend1_name,
-      r1_s : recommend1_scores,
-      r2_n : recommend2_name,
-      r2_s : recommend2_scores,
-      r3_n : recommend3_name,
-      r3_s : recommend3_scores
+      r1_n: recommend1_name,
+      r1_s: recommend1_scores,
+      r1_u: recommend1_url,
+      r2_n: recommend2_name,
+      r2_s: recommend2_scores,
+      r2_u: recommend2_url,
+      r3_n: recommend3_name,
+      r3_s: recommend3_scores,
+      r3_u: recommend3_url
     })
   },
 
@@ -107,18 +114,18 @@ Page({
   
   },
 
-  imageLoad: function(e) {
-    var _this = this;
-    var $width = e.detail.width,    //获取图片真实宽度  
-      $height = e.detail.height,
-      ratio = $width / $height;   //图片的真实宽高比例  
-    var viewWidth = 420,           //设置图片显示宽度，  
-      viewHeight = 420 / ratio;    //计算的高度值     
-    this.setData({
-      imgwidth: viewWidth,
-      imgheight: viewHeight
-    })
-  },  
+  // imageLoad: function(e) {
+  //   var _this = this;
+  //   var $width = e.detail.width,    //获取图片真实宽度  
+  //     $height = e.detail.height,
+  //     ratio = $width / $height;   //图片的真实宽高比例  
+  //   var viewWidth = 420,           //设置图片显示宽度，  
+  //     viewHeight = 420 / ratio;    //计算的高度值     
+  //   this.setData({
+  //     imgwidth: viewWidth,
+  //     imgheight: viewHeight
+  //   })
+  // },  
 
   detail_des:function(e) {
     wx.navigateTo({

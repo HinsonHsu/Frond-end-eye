@@ -83,6 +83,11 @@ Page({
         var tempFilePaths = res.tempFilePaths // 存储照片的存放位置
         // console.log(tempFilePaths[0])
         console.log("photo success")
+        wx.showToast({
+          title: "正在上传",
+          icon: 'success',
+          duration: 2000
+        }),
         wx.uploadFile({
           url: getApp().globalData.server + '/upload', //服务器地址
           filePath: tempFilePaths[0],
@@ -97,12 +102,7 @@ Page({
             //   name: "fuzinfs",
             //   des: "sdfsdf"
             // }
-            //console.log(res)
-            wx.showToast({
-              title: "正在上传",
-              icon: 'success',
-              duration: 2000
-            })
+            console.log(res)
             wx.navigateTo({
               url: '../information/infor?key=' + data + '&path=' + tempFilePaths[0]
             })

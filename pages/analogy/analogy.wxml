@@ -8,7 +8,7 @@
   </view>
   <view class='m1'>
     <view class='m1_p'>
-      <image src='/images/analogy_1.jpg' class='p1_p' style='width:200px; height:150px;'></image> 
+      <image src='{{p1_u}}' class='p1_p' style='width:200px; height:150px;'></image> 
     </view>
     <view class='text_1'>
       <view class='s1_line'>
@@ -29,7 +29,7 @@
   </view>
   <view class='m2'>
     <view class='m2_p'>
-      <image src='/images/analogy_2.jpg' class='p2_p' style='width:200px; height:150px;'></image> 
+      <image src='{{p2_u}}' class='p2_p' style='width:200px; height:150px;'></image> 
     </view>
     <view class='text_2'>
       <view class='s2_line'>
@@ -50,7 +50,7 @@
   </view>
   <view class='m3'>
     <view class='m3_p'>
-      <image src='/images/analogy_3.jpg' class='p3_p' style='width:200px; height:150px;'></image> 
+      <image src='{{p3_u}}' class='p3_p' style='width:200px; height:150px;'></image> 
     </view>
     <view class='text_3'>
       <view class='s3_line'>

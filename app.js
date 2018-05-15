@@ -73,7 +73,7 @@ App({
   },  
   globalData: {
     userInfo: null,
-    server: 'http://www.h1nson.club',
+    server: 'http://www.hinson.xyz',
     cameraFlag:false , //标记相机未被打开
     albumFlag:false,  //标记图片库未被打开
     inforNum:1,  //记录信息的次数

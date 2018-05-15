@@ -6,5 +6,14 @@
 <!-- 图片的信息 -->
 <view class='information'>
   <view><text class="place">{{place}}</text></view>
-  <view><text>{{des}}</text></view>
+  <view><text class='des'>{{des}}</text></view>
+  <view class='line_1' bindtap='strategy' id="{{spotId}}">
+    <text class='line_1t'>旅游攻略</text>
+    <image src="/images/箭头.png" class="line_1p"></image> 
+  </view>
+  <text>\n</text>
+  <view class='line_2' bindtap='analogy' id="{{spotId}}">
+    <text class='line_2t'>相关景点推荐</text>
+    <image src="/images/箭头.png" class="line_2p"></image> 
+  </view>
 </view>

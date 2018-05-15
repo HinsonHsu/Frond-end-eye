@@ -123,17 +123,27 @@ page{
 .p5 {
   margin-left: 7px;
 }
+
+.r_n{
+  display: flex;
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
 .r1_n {
   font-size: 15px;
-  margin-left: 40px;
+  margin-left: 35px; 
+  width: 33%;
+  justify-content: center;
+  
 }
 .r2_n {
   font-size: 15px;
-  margin-left: 85px;
+  margin-left: 35px; 
+  width: 33%
 }
 .r3_n {
   font-size: 15px;
-  margin-left: 80px;
+  margin-left: 40px; 
+  width: 33%
 }
 .r_s{
   display: flex;  

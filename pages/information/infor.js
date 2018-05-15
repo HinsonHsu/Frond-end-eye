@@ -18,7 +18,7 @@ Page({
       key:options.key,
       path:options.path,
     })
-    //console.log(options.key)
+    console.log(options.key)
     //console.log("路径" + options.path)
     getApp().globalData.inforFlag = true  //信息已接收
 
@@ -26,12 +26,15 @@ Page({
     var obj = JSON.parse(options.key)
     var place = obj.data.value
     var des = obj.data.description
+    var spotId = obj.data.spotId
+    console.log(spotId)
     //console.log("地点:" + obj.data.value)
     //console.log("描述：" + obj.data.description)
 
     this.setData({
       place: place,
       des: des,
+      spotId: spotId,
     })
     //console.log(obj.tags[0].value)
 
@@ -113,4 +116,40 @@ Page({
     })
   },  
 
+  strategy: function(e) {
+    // console.log(e)
+    var spotId = e.currentTarget.id;
+    // console.log(spotId)
+    wx.request({
+      url: getApp().globalData.server + '/strategy?spotId=' + spotId,
+      success: function(res){
+        // console.log(res.data)
+        var data = res.data.data
+        // console.log(data)
+        let strData = JSON.stringify(data)
+        wx.navigateTo({
+          url: '../strategy/strategy?key=' + strData,
+        })
+      }
+    })
+  },
+
+  analogy: function(e) {
+    var spotId = e.currentTarget.id;
+    // console.log(spotId)
+    wx.request({
+      url: getApp().globalData.server + '/analogy?spotId=' + spotId,
+      success: function (res) {
+        // console.log(res.data)
+        var data = res.data.data
+        // console.log(data)
+        let strData = JSON.stringify(data)
+        // console.log(strData)
+
+        wx.navigateTo({
+          url: '../analogy/analogy?key=' + strData,
+        })
+      }
+    })
+  }
 })
